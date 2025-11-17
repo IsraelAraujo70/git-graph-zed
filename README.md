@@ -8,6 +8,11 @@ Git Graph is a work-in-progress Zed extension that aims to bring an interactive 
 2. Run `cargo build --target wasm32-wasi` to compile the WebAssembly artifact when iterating on the extension logic.
 3. Restart Zed (or start it via `zed --foreground`) to see log output while debugging.
 
+## Slash Command
+
+- Use `/git-graph [limit]` inside the Assistant to capture the current worktree history. The optional `limit` (default 400, max 2000) controls how many commits are streamed from `git log`.
+- The command returns a JSON payload containing commit nodes, edges, branch/tag metadata, and whether the graph was truncated. This acts as the data contract for the upcoming visual panel.
+
 ## Roadmap
 
 - Read the current repository's commit graph and expose it as data to slash commands.
