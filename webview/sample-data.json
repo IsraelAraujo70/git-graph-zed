@@ -1,0 +1,78 @@
+{
+  "commits": [
+    {
+      "oid": "b4a973f98b7c9283df85effc6894ad3530afe64d",
+      "short_oid": "b4a973f9",
+      "parents": [
+        "4db06481b98c21341f32a94d5933d330964bbaa3"
+      ],
+      "author": "Israel Santos",
+      "author_email": "israel@example.com",
+      "relative_time": "3 hours ago",
+      "committed_at": "2024-05-02T12:45:01Z",
+      "committed_timestamp": 1714653901,
+      "summary": "Implement git graph collector",
+      "decorations": {
+        "head": "main",
+        "tags": [],
+        "local_branches": [
+          "origin/main"
+        ],
+        "remote_branches": []
+      }
+    },
+    {
+      "oid": "4db06481b98c21341f32a94d5933d330964bbaa3",
+      "short_oid": "4db06481",
+      "parents": [
+        "1ef84bc44b07dd160f8ff2a6a289770ed80e6c80"
+      ],
+      "author": "Israel Santos",
+      "author_email": "israel@example.com",
+      "relative_time": "5 hours ago",
+      "committed_at": "2024-05-02T10:18:19Z",
+      "committed_timestamp": 1714645099,
+      "summary": "Scaffold slash command interface",
+      "decorations": {
+        "head": null,
+        "tags": [],
+        "local_branches": [
+          "feature/slash-command"
+        ],
+        "remote_branches": []
+      }
+    },
+    {
+      "oid": "1ef84bc44b07dd160f8ff2a6a289770ed80e6c80",
+      "short_oid": "1ef84bc4",
+      "parents": [],
+      "author": "Israel Santos",
+      "author_email": "israel@example.com",
+      "relative_time": "1 day ago",
+      "committed_at": "2024-05-01T09:00:00Z",
+      "committed_timestamp": 1714554000,
+      "summary": "Initial commit",
+      "decorations": {
+        "head": null,
+        "tags": [
+          "v0.1.0"
+        ],
+        "local_branches": [
+          "origin/main"
+        ],
+        "remote_branches": []
+      }
+    }
+  ],
+  "edges": [
+    {
+      "child": "b4a973f98b7c9283df85effc6894ad3530afe64d",
+      "parent": "4db06481b98c21341f32a94d5933d330964bbaa3"
+    },
+    {
+      "child": "4db06481b98c21341f32a94d5933d330964bbaa3",
+      "parent": "1ef84bc44b07dd160f8ff2a6a289770ed80e6c80"
+    }
+  ],
+  "truncated": false
+}

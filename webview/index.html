@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Git Graph Preview</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <h1>Git Graph</h1>
+      <div class="header-actions">
+        <button id="refresh-button" title="Request new data">Refresh</button>
+        <label class="limit-input">
+          History Limit
+          <input id="history-limit" type="number" min="50" max="2000" value="400" />
+        </label>
+      </div>
+    </header>
+    <main>
+      <section class="summary">
+        <dl>
+          <div>
+            <dt>Commits</dt>
+            <dd id="summary-commits">0</dd>
+          </div>
+          <div>
+            <dt>Branches</dt>
+            <dd id="summary-branches">0</dd>
+          </div>
+          <div>
+            <dt>Tags</dt>
+            <dd id="summary-tags">0</dd>
+          </div>
+          <div>
+            <dt>Status</dt>
+            <dd id="summary-truncated">–</dd>
+          </div>
+        </dl>
+      </section>
+      <section id="graph-container" class="graph-container">
+        <p class="empty-state">
+          Waiting for graph data… run <code>/git-graph</code> or drop a JSON payload here.
+        </p>
+      </section>
+    </main>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
