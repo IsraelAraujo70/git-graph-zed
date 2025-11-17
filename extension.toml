@@ -1,0 +1,8 @@
+id = "git-graph"
+name = "Git Graph"
+version = "0.1.0"
+schema_version = 1
+authors = ["Israel Oliveira <israelaraujodeoliveira@gmail.com>"]
+description = "Visualize your repository history directly inside Zed."
+repository = "https://github.com/israelaraujo70/git-graph-zed"
+license = "MIT"
